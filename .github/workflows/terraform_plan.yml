@@ -1,7 +1,6 @@
 name: "Terraform Plan test"
 
-on:
-  pull_request:
+on: [push, pull_request]
 
 env:
   TF_CLOUD_ORGANIZATION: "${{ secrets.TF_ORG_NAME }}"
